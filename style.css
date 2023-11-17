@@ -1,0 +1,62 @@
+body {
+  background: url('./assets/pokemon-bg.jpg');
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 20px;
+}
+#board {
+  height: 532px;
+  width: 475px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  border: 10px solid lightgray;
+}
+
+.card {
+  cursor: pointer;
+  /* position: relative; */
+  /* transform-style: preserve-3d; */
+  height: 128px;
+  width: 90px;
+  margin: 2.5px;
+}
+
+.card.shake {
+  animation: shake 0.35 ease-in-out;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-13px);
+  }
+  40% {
+    transform: translateX(13px);
+  }
+  60% {
+    transform: translateX(-8px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+}
+
+.coin-display {
+  font-family: 'Times New Roman', serif;
+  font-size: 40px;
+  color: #183374;
+  /* padding: 3px; */
+  /* background-color: #d3d3d3; */
+}
