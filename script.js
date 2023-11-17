@@ -17,7 +17,7 @@ let rows = 4;
 let columns = 5;
 
 let coin = 10_000;
-let matchPairs = 10;
+let matchPairs = 0;
 
 let cardOneSelected;
 let cardTwoSelected;
